@@ -1,0 +1,25 @@
+/* Footer design */
+#footer {
+  background: $purple-darker;
+  padding: 20px 10px 15px 0;
+  color: $grey-light;
+
+  ul li {
+    padding: 0 5px;
+  }
+
+  ul li a {
+    color: $purple-light;
+    font-size: 30px;
+    letter-spacing: 20px;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+
+
+

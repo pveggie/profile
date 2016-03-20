@@ -1,0 +1,68 @@
+// h2 {
+//   margin-bottom: 30px;
+//   margin-top: 0;
+//   font-weight: bold;
+// }
+//
+#flexbox-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-avatar-item {
+  padding: 0 10px;
+
+}
+
+
+#description {
+  color: $purple-dark;
+  padding: 20px;
+  margin: 30px 0;
+
+  h1, h2 {
+    color: $purple-darker;
+  }
+}
+
+.image-game {
+  height: 150px;
+
+}
+
+.text-light {
+  color: white;
+}
+
+#propaganda {
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-around;
+}
+
+#propaganda-box {
+
+  height: 300px;
+  margin: 0px 10px;
+
+  display: flex;
+  align-items: flex-end;
+
+
+
+}
+
+#propaganda-text {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid $green-grey;
+
+
+  p {
+    color: #30011e;
+  }
+
+}
+
+

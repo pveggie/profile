@@ -1,0 +1,20 @@
+/* Card design */
+.card {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.card-purple {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-color: $purple-dark;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 330px;
+  padding-top: 30px;
+}

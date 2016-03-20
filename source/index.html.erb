@@ -1,0 +1,172 @@
+---
+title: Gemma Gotch
+---
+
+
+
+<div class="container text-center">
+  <div class="row">
+
+
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div id="description">
+        <div id="flexbox-avatar">
+          <div class="flexbox-avatar-item">
+            <%= image_tag 'profile.jpg', alt: "profile pic", class: "avatar-square" %>
+          </div>
+          <div class="flexbox-avatar-item">
+            <h1>Gemma Gotch</h1>
+          </div>
+        </div>
+        <h2>Aspiring Web Developer, Actual Geek</h2>
+
+        <p class="text-justify">
+          After 8 years working in software localisation and being a pain in the
+          butt to developers, I've realised I want to become a developer and be
+          a pain in the butt to translators instead.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-purple">
+  <div class="container text-center">
+    <div class="row">
+      <h2 class="text-light">My Inspiration</h2>
+      <div class="col-xs-12 col-sm-7">
+        <div id="propaganda-video">
+          <iframe src="//player.vimeo.com/video/82845877?color=00A191&badge=0&byline=0&portrait=0&title=0" width="100%" height="300px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <div id="propaganda-box">
+          <div id="propaganda-text">
+
+            <p id="propaganda-dialog">JUST WATCH IT. If you hate it, I'll give you cake.</p>
+            <button type="button" class="btn btn-primary btn-lg" id="propaganda-button">That was awesome!</button>
+            <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#bin-modal">That sucked! I want my cake.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+<!-- Modals -->
+<div class="modal fade text-center" id="bin-modal" tabindex="-1" role="dialog" aria-labelledby="bin-modal-abel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="bin-modal-label">Compensation Cake</h4>
+      </div>
+      <div class="modal-body">
+        <p>We're processing your request. Please check back later!</p>
+        <%= image_tag 'bin.jpg', alt: "bin" %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Mariosweeper -->
+<div class="padded">
+  <div class="container text-center">
+    <div class="row">
+
+      <h2>Mariosweeper</h2>
+
+      <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+        <p>
+          You have a bunch of games to unwrap in your 3DS menu. You're excited to see what's there, but
+          you have this sinking feeling that some of them are gonna involve Mario. Can you find all the non-Mario titles without accidentally uncovering any red-hatted moustached dudes?
+        </p>
+
+        <div id="mariosweeper-result">
+          <p id="mariosweeper-result-message"></p>
+          <button type="button" class="btn btn-primary btn-lg hidden" id="mariosweeper-restart">New game</button>
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-3">
+        <div id="mariosweeper">
+
+          <table>
+            <!-- creating a 9 by 9 table -->
+            <% row = 1 %>
+            <% 9.times do %>
+            <tr>
+              <% col = 1 %>
+              <% 9.times do %>
+              <td class="unopened" id="row<%=row%>-col<%=col%>"></td>
+              <% col += 1 %>
+              <% end %>
+            </tr>
+            <% row += 1 %>
+            <% end %>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="padded">
+  <div class="container text-center">
+    <div class="row">
+
+      <!--TODO Fix the mad font stuff-->
+      <h2>My Favourite Game Series</h2>
+      <div class="col-xs-12 col-sm-4">
+
+        <div class="card-purple">
+          <%= image_tag 'fire_emblem.jpg', alt: "fire emblem", class: "image-game" %>
+
+          <h3>Fire Emblem</h3>
+          <p>Japanese strategy RPG where character death is permanent...in theory. Anything can be undone by turning your console off and restarting the level.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card-purple">
+          <%= image_tag 'mass_effect.jpg', alt: "mass effect", class: "image-game" %>
+          <h3>Mass Effect</h3>
+          <p>Third-person sci-fi shooter with a deep story that changes depending on your actions.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card-purple">
+          <%= image_tag 'dragon_age.jpg', alt: "dragon age", class: "image-game" %>
+
+          <h3>Dragon Age</h3>
+          <p>The medieval-fantasy, tactical-RPG version of Mass Effect, sort of. Your choices matter. In that you get slightly different lines of dialogue down the line.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container text-center">
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+      <h2>About This Page</h2>
+      <!--games table -->
+      <p>This page has been coded during the <a href="https://www.lewagon.com/">FullStack program @LeWagon</a>. This is my favourite bootcamp in the citadel. (Cash payments and bank transfers accepted for endorsements.)</p>
+
+
+    </div>
+  </div>
+</div>
+</div>

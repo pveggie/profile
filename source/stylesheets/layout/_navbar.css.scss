@@ -1,0 +1,101 @@
+/* Main class */
+.navbar-gemma {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: $brand-color;
+  transition: all 0.3s ease;
+  display: flex;
+  height: 70px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Optional class to fix the navbar on top */
+.navbar-gemma-fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+
+/* Navbar right section (links) */
+.navbar-gemma-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar item */
+.navbar-gemma-item {
+  flex: 0 1 auto;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Navbar standard link */
+.navbar-gemma-link {
+
+  font-family: 'Unica One', cursive;
+  color: $grey-lighter;
+  font-size: 14px;
+  font-weight: bold;
+
+  &:hover {
+    color: $purple-light;
+    text-decoration: none;
+  }
+}
+
+
+/* Navbar right button */
+.navbar-gemma-button {
+  margin-left: 10px;
+  padding: 0 20px;
+  border-radius: 20em;
+  line-height: 40px;
+  color: white;
+  font-size: 14px;
+  border-width: 2px;
+
+}
+
+
+/* Navbar dropdown menu */
+.navbar-gemma-dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px $grey-light;
+  border-color: $grey-light;
+
+  li > a {
+    transition: color 0.3s ease;
+    font-weight: lighter !important;
+    color: $grey !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    padding: 10px 20px;
+
+    &:hover {
+      transition: color 0.3s ease;
+      font-weight: lighter !important;
+      color: $grey !important;
+      font-size: 15px !important;
+      line-height: 22px !important;
+      padding: 10px 20px;
+    }
+  }
+}
+
+.navbar-gemma-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid $grey-light;
+  border-top: 1px solid $grey-light;
+}

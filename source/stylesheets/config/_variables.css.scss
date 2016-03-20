@@ -1,0 +1,51 @@
+/* -------------------------------------
+ * Fonts
+ * ------------------------------------- */
+// Google fonts
+
+@import url('https://fonts.googleapis.com/css?family=Unica+One|Vollkorn:400,700');
+$base-font: "Vollkorn", "Palatino Linotype", "serif";
+$header-font: "Unica One", "cursive";
+
+// Local fonts (uncomment following lines)
+// @font-face {
+// font-family: 'Unica One', cursive;
+// font-family: 'Vollkorn', serif;
+//   font-family: "Font Name";
+//   src: font-url('FontFile.eot');
+//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+//        font-url('FontFile.woff') format('woff'),
+//        font-url('FontFile.ttf') format('truetype')
+// }
+// $my-font: "Font Name";
+
+// Font-size and line-height
+$base-size: 14px;
+$base-height: 1.4;
+
+/* -------------------------------------
+ * Colors
+ * ------------------------------------- */
+// Scheme
+$brand-color: #00A191;
+
+$purple-darker: #30011e;
+$purple-dark: #7F3D5B;
+$purple-light: #893168;
+// $purple-lighter: #893168;
+$purple-lightest: #897180;
+$blue: #315659;
+$yellow: #F9C22E;
+$orange: #F15946;
+$green: #00A191;
+$green-dark: #3C5F53;
+$green-darker: #03312e;
+$green-grey: #778585;
+
+
+// Gray scale
+$grey-darker:  lighten(#000, 13.5%); // #333
+$grey-dark:    lighten(#000, 20%);   // #666
+$grey:         lighten(#000, 33.5%); // #999
+$grey-light:   lighten(#000, 46.7%); // #CCC
+$grey-lighter: lighten(#000, 93.5%); // #F1f1f1

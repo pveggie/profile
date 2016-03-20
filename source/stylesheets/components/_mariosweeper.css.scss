@@ -1,0 +1,67 @@
+/* CSS classes you can use on your table td to display the relevant tile */
+td.opened {
+  background-image: image-url('opened.png');
+}
+td.mario {
+  background-image: image-url('mario.jpg');
+}
+td.mario-neighbour-1 {
+  background-image: image-url('1.png');
+}
+td.mario-neighbour-2 {
+  background-image: image-url('2.png');
+}
+td.mario-neighbour-3 {
+  background-image: image-url('3.png');
+}
+td.mario-neighbour-4 {
+  background-image: image-url('4.png');
+}
+td.mario-neighbour-5 {
+  background-image: image-url('5.png');
+}
+td.mario-neighbour-6 {
+  background-image: image-url('6.png');
+}
+td.mario-neighbour-7 {
+  background-image: image-url('7.png');
+}
+td.mario-neighbour-8 {
+  background-image: image-url('8.png');
+}
+td.question {
+  background-image: image-url('question.jpg');
+}
+td.flagged {
+  background-image: image-url('flag.jpg');
+}
+td.unopened {
+  background-image: image-url('unopened.jpg');
+  cursor: pointer;
+}
+
+#result {
+  text-align: center;
+
+}
+
+.hidden {
+  display: none;
+  position: fixed;
+}
+
+#mariosweeper table {
+  border-collapse: collapse;
+  border: 1px solid $grey-light;
+  margin: auto;
+}
+
+#mariosweeper table td {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+#mariosweeper-result {
+  margin-bottom: 30px;
+}
