@@ -84,7 +84,7 @@ function placeNumbers() {
 };
 
 function lose() {
-  $('#mariosweeper-result-message').text("Ouch! It's-a-him!");
+  $('#mariosweeper-result-message').text("Ouch! It's-a-he!");
   $('#mariosweeper-restart').removeClass('hidden');
   $('td').removeClass('unopened');
   $('td').addClass('opened');

@@ -97,14 +97,15 @@ title: Gemma Gotch
 
       <div class="col-xs-12 col-sm-3">
         <div id="mariosweeper">
+          <% side_length = 9 %>
 
           <table>
             <!-- creating a 9 by 9 table -->
             <% row = 1 %>
-            <% 9.times do %>
+            <% side_length.times do %>
             <tr>
               <% col = 1 %>
-              <% 9.times do %>
+              <% side_length.times do %>
               <td class="unopened" id="row<%=row%>-col<%=col%>"></td>
               <% col += 1 %>
               <% end %>
@@ -163,7 +164,7 @@ title: Gemma Gotch
 
       <h2>About This Page</h2>
       <!--games table -->
-      <p>This page has been coded during the <a href="https://www.lewagon.com/">FullStack program @LeWagon</a>. This is my favourite bootcamp in the citadel. (Cash payments and bank transfers accepted for endorsements.)</p>
+      <p>This page has been coded during the <a href="https://www.lewagon.com/">FullStack program @LeWagon</a>. This is my favourite bootcamp on the citadel. (Cash payments and bank transfers accepted for endorsements.)</p>
 
 
     </div>
